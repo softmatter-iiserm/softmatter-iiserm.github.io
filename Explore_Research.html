@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Our Research</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #234;
+      padding: 40px;
+      background: #fafafa;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0f6b63;
+      font-size: 36px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Back link */
+    .back {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .back a {
+      background: #0f6b63;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Research blocks layout */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .project-block {
+      display: flex;
+      gap: 20px;
+      background: #f2f6f6;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid black;
+      align-items: stretch;
+    }
+
+    .project-block img {
+      width: 400px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #ddd;
+      flex-shrink: 0;
+    }
+
+    .project-block video.project-thumb {
+      width: 400px;      
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+}
+
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .project-tag {
+      color: #0f6b63;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .project-desc {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .project-meta {
+      font-size: 14px;
+      opacity: 0.9;
+      margin-bottom: 8px;
+    }
+
+    .links {
+      margin-top: 6px;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0f6b63;
+      border-bottom: 1px solid rgba(15,107,99,0.3);
+      padding-bottom: 2px;
+    }
+
+    /* Responsive: stack image and text on small screens */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+      .project-block {
+        flex-direction: column;
+      }
+      .project-block img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Explore Our Research</h1>
+
+  <div class="container">
+
+    <div class="projects">
+
+      <!-- Block 1 -->
+      <div class="project-block">
+        <video class="project-thumb" src="Videos/helical_chain_packing.mp4" muted playsinline controls></video>
+        <div class="project-content">
+          <div>
+            <div class="project-title">Packing of a Helical Polymer in a Capsid</div>
+            <div class="project-tag">Soft &amp Active Matter</div>
+            <p class="project-desc">
+              We study how torsional rigidity affects the packing and ejection of a helical semiflexible polymer inside a spherical capsid. 
+              A small amount of torsional stiffness minimizes packing time, while higher stiffness produces a non-monotonic slowdown–speedup 
+              behavior driven by competition between spooling tendencies and increased persistence length. Confinement is essential for this effect, 
+              and torsional rigidity strongly promotes spool-like structures. In contrast, ejection slows steadily with increasing torsional stiffness, 
+              showing how torsional elasticity governs both entry and exit dynamics in confined polymers.
+            </p>
+            <p class="project-meta">
+              <!--Reference: <em>Packing and ejection of a semiflexible polymer in a capsid: Effect of helicity</em>, J. Chem. Phys. 163 (2024), 164901.-->
+            </p>
+          </div>
+          <div class="links">
+            <a href="https://doi.org/10.1063/5.0292735" target="_blank" rel="noreferrer">Read the paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 2 -->
+      <div class="project-block">
+        <img src="Images/Natcomm2025_Pritam.jpg" alt="Hearing" />
+        <div class="project-content">
+          <div>
+            <div class="project-title">From Genotype to Biomechanics: Force-Driven Folding in Cadherin-23 Variants</div>
+            <div class="project-tag">Mechanobiology</div>
+            <p class="project-desc">
+              We dissect how oscillatory, sound-like mechanical forces drive stochastic folding–unfolding dynamics in 
+              tip-link proteins central to hearing. Using single-molecule force spectroscopy and in-silico modeling, 
+              we reveal mechanical adaptation that enables reliable mechano-transduction. We show that disease mutations 
+              impair this force adaptation, causing cooperative, failure-prone unfolding of tip-links. 
+              These mechanical vulnerabilities offer a molecular explanation for the severity of hearing loss and phenotypic 
+              variation across individuals.
+            </p>
+          </div>
+          <div class="links">
+            <a href="https://doi.org/10.1038/s41467-025-55946-3" target="_blank" rel="noreferrer">Read the paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="project-block">
+        <img src="Images/card1.jpg" alt="Chiral vesicle dynamics" />
+        <div class="project-content">
+          <div>
+            <div class="project-title">Active Vesicles and Chiral Membrane Dynamics</div>
+            <div class="project-tag">Biophysical Soft Interfaces</div>
+            <p class="project-desc">
+              We explore how activity embedded in or acting on fluid membranes drives vesicles
+              far from equilibrium. Our models reveal spinning, helical trajectories and shape
+              deformations controlled by curvature–activity coupling, with direct relevance to
+              biological organelles and synthetic active capsules.
+            </p>
+            <p class="project-meta">
+              Highlight: prediction of parameter regimes where vesicles switch from diffusive
+              wandering to persistent chiral orbits.
+            </p>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Advanced Materials article</a>
+            <a href="#" target="_blank" rel="noreferrer">More images</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-block">
+        <img src="Images/research_collective_experiments.jpg" alt="Experiments on active matter" />
+        <div class="project-content">
+          <div>
+            <div class="project-title">Experiments on Active Colloids and Bio-systems</div>
+            <div class="project-tag">Bench-top Realizations &amp; Validation</div>
+            <p class="project-desc">
+              In close collaboration with experiments, we design minimal active colloidal and
+              bio-inspired systems where theory and simulations can be tested quantitatively.
+              Using high-speed imaging and particle tracking, we map out phase diagrams,
+              defect dynamics, and transport properties of active suspensions.
+            </p>
+            <p class="project-meta">
+              Focus areas: light-activated colloids, bacterial suspensions, and cytoskeletal
+              extracts under confinement and flow.
+            </p>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Experimental group page</a>
+            <a href="#" target="_blank" rel="noreferrer">Dataset &amp; codes</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-block">
+        <img src="Images/research_computation_gpu.jpg" alt="GPU simulations" />
+        <div class="project-content">
+          <div>
+            <div class="project-title">Large-scale GPU Simulations of Soft Matter</div>
+            <div class="project-tag">High-Performance Computing</div>
+            <p class="project-desc">
+              Many of our projects rely on custom GPU-accelerated codes to simulate millions of
+              interacting particles, polymers, and vesicles. We develop and maintain in-house
+              tools to probe long time scales, rare events, and emergent patterns in active and
+              passive soft matter.
+            </p>
+            <p class="project-meta">
+              Techniques: Brownian and Langevin dynamics, hydrodynamic couplings, and coarse-grained
+              models tuned to experimental systems.
+            </p>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Simulation toolkit</a>
+            <a href="#" target="_blank" rel="noreferrer">Git / code repository</a>
+          </div>
+        </div>
+      </div>
+      -->
+
+    </div>
+
+  </div>
+
+  <div class="back">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>

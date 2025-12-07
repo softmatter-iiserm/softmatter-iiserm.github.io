@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Matter@IISERM</title>
+
+  <style>
+    body { margin:0; font-size:18px; font-family: Arial, sans-serif; color:#234; }
+    header {
+      background:#0f6b63 url('template.png') center/cover no-repeat;
+      padding:100px 20px;
+      text-align:center;
+      color:white;
+    }
+    h1 { font-size:50px; margin:0 0 10px; }
+    .subtitle { font-size:25px; margin-bottom:20px; }
+    .subtitle2 { font-size:20px; margin-bottom:20px;} 
+    .button {
+      display:inline-block; padding:12px 25px;
+      background:#0b5a53; color:white;
+      border-radius:6px; text-decoration:none;
+      font-weight:bold;
+    }
+    section {
+      padding:60px 20px;
+      max-width:1000px;
+      margin:auto; text-align:center;
+    }
+    .cards { display:flex; gap:20px; margin-top:40px; }
+    .card {
+      flex:1; background:#f2f6f6; padding:25px;
+      border-radius:8px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+    .card img {
+      width:200px;
+      height:200px;          /* same height for all images */
+      object-fit:contain;     /* keep proportions */
+      display:block;
+      margin:0 auto 15px;     /* center + spacing */
+    }
+    
+    .quick-buttons {
+      display:flex; justify-content:center; gap:20px; margin-top:25px;
+    }
+    .quick-buttons a {
+      padding:12px 22px; background:#0f6b63;
+      color:white; text-decoration:none;
+      border-radius:6px; font-weight:bold;
+    }
+    ul { list-style:none; padding:0; }
+    ul li {
+      margin:10px 0; display:flex; align-items:center; gap:10px;
+    }
+    .dot {
+      width:10px; height:10px; background:#0f6b63;
+      border-radius:50%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Soft Matter of Living and Non-Living Systems</h1>
+    <br>
+    <div class="subtitle">Soft Matter &bull; Active Matter &bull; Biophysics</div>
+    <div class="subtitle2">Indian Institute of Science Education and Research (IISER) - Mohali</div>
+    <br>
+    <a href="Explore_Research.html" class="button"><strong>Explore Our Research</strong></a>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      We are a set of theoretical, computational, and experimental research groups at IISER Mohali investigating emergent behaviour in complex soft and biological systems, spanning active and soft matter, mechanobiology and cell mechanics, active nematics, biophysical modelling, and transport in non-equilibrium environments.
+    </p>
+    <p>
+      We combine physics-based theory and large-scale simulations to uncover the principles that govern motion, shape, and organisation in systems far from equilibrium. We also employ a wide range of experimental tools, including optical and magnetic tweezers, AFM, advanced microscopy, and microfluidics.    
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Images/card1.jpg" alt="Picture"/>
+        <h3>Soft &amp Active Matter</h3>
+        <p>We investigate how activity, chirality, and geometric constraints drive flows, collective dynamics, and self-organized states.</p>
+      </div>
+
+      <div class="card">
+        <img src="Images/hair_cell.jpg" alt="Picture"/>
+        <h3>Mechanobiology</h3>
+        <p>Our work explores how cells sense, generate, and respond to mechanical forces, shaping processes like growth, migration, differentiation, and tissue organisation.</p>
+      </div>
+
+      <div class="card">
+        <img src="Images/card3.jpg" alt="Picture"/>
+        <h3>Biophysical Modelling</h3>
+        <p>We develop models to understand cellular motion, cytoskeletal activity, and pattern formation in biological systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quick Access</h2>
+    <div class="quick-buttons">
+      <a href="people.html">People</a>
+      <!--<a href="#themes">Research Themes</a>-->
+      <a href="publications.html">Publications</a>
+      <a href="JoinUS.html">Join Us</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recent Updates</h2>
+    <ul>
+      <li><div class="dot"></div> Soham's work is published in Journal of Chemical Physics</li>
+      <li><div class="dot"></div> Dr.Dipak Patra has been awarded NPDF Fellowship</li>
+      <li><div class="dot"></div> Veerpal's work is published in Advanced Materials</li>
+    </ul>
+  </section>
+</body>
+</html>
+

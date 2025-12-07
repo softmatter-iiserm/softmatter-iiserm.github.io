@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People</title>
+
+  <style>
+    body {
+      margin:0;
+      font-family:Arial, sans-serif;
+      color:#234;
+      padding:40px;
+      background:#fafafa;
+    }
+    h1 {
+      text-align:center;
+      margin-bottom:40px;
+      color:#0f6b63;
+      font-size:36px;
+    }
+    h2 {
+      color:#0f6b63;
+      border-bottom: 2px solid #0f6b63;
+      padding-bottom: 10px;
+      margin-top:60px;
+    }
+    .container { 
+      max-width:1200px; 
+      margin:auto; 
+    }
+
+    /* Back link */
+    .back {
+      text-align:center;
+      margin-top:60px;
+    }
+    .back a {
+      background:#0f6b63;
+      padding:10px 20px;
+      color:white;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    /* Grid for people (Faculty only) */
+    .members-grid {
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:25px;
+    }
+
+    /* Member cards */
+    .member {
+      display:flex;
+      gap:20px;
+      background:#f2f6f6;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid black;
+    }
+    .member img {
+      width:120px;
+      height:auto;
+      object-fit:cover;
+      border-radius:8px;
+      background:#ddd;
+    }
+    .name { font-size:22px; font-weight:bold; }
+    .role { color:#0f6b63; font-weight:bold; }
+
+    /* For Group members*/
+  .lab-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .lab-group h3 {
+    margin-bottom: 5px;
+    display:flex;
+      gap:20px;
+      background:#f2f6f6;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid black;
+  }
+  .lab-group ul {
+    padding-left: 20px;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+  <h1>People</h1>
+
+  <div class="container">
+
+    <!-- ========== FACULTY SECTION ========== -->
+    <h2>Faculty</h2>
+
+    <div class="members-grid">
+
+      <!-- Entry 1 -->
+      <div class="member">
+        <img src="Images/AC.jpg" alt="Photo" />
+        <div>
+          <div class="name">Prof. Abhishek Chaudhuri</div>
+          <div class="role">Professor of Physics</div>
+          <p>Theoretical and computational soft matter and biophysics.</p>
+          <p>Email: abhishek@iisermohali.ac.in</p>
+          <a href="https://scholar.google.co.in/citations?hl=en&user=E4p-Ah4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer"><img src="Images/gscholar.png" alt="" style="width:50px;height:auto;"></a>
+          <a href="https://web.iisermohali.ac.in/dept/physics/Abhishek_Chaudhuri.html" target="_blank" rel="noreferrer"><img src="Images/iiserm_logo.png" alt="" style="width:50px;height:auto;"></a>
+        </div>
+      </div>
+
+      <!-- Entry 2 -->
+      <div class="member">
+        <img src="Images/anil.jpg" alt="Photo" />
+        <div>
+          <div class="name">Prof. Anil Kumar Dasanna</div>
+          <div class="role">Professor of Physics</div>
+          <p>Theoretical and computational soft matter and biophysics.</p>
+          <p>Email: adasanna@iisermohali.ac.in</p>
+          <a href="https://scholar.google.de/citations?hl=en&user=QwMrYwgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer"><img src="Images/gscholar.png" alt="" style="width:50px;height:auto;"></a>
+          <a href="https://web.iisermohali.ac.in/dept/physics/Anil_Kumar_Dasanna.html" target="_blank" rel="noreferrer"><img src="Images/iiserm_logo.png" alt="" style="width:50px;height:auto;"></a>
+        </div>
+      </div>
+
+      <!-- Entry 3 -->
+      <div class="member">
+        <img src="Images/srakshit.jpeg" alt="Photo" />
+        <div>
+          <div class="name">Prof. Sabyasachi Rakshit</div>
+          <div class="role">Professor of Chemistry</div>
+          <p>Experiments on active matter and biophysics.</p>
+          <p>Email: srakshit@iisermohali.ac.in</p>
+          <a href="https://scholar.google.co.in/citations?hl=en&user=_QAq4oEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer"><img src="Images/gscholar.png" alt="" style="width:50px;height:auto;"></a>
+          <a href="https://www.iisermohali.ac.in/faculty/dcs/srakshit" target="_blank" rel="noreferrer"><img src="Images/iiserm_logo.png" alt="" style="width:50px;height:auto;"></a>
+        </div>
+      </div>
+
+      <!-- Entry 4 (uncommented Rajeev Kapri) -->
+      <div class="member">
+        <img src="Images/rkapri.jpg" alt="Photo" />
+        <div>
+          <div class="name">Prof. Rajeev Kapri</div>
+          <div class="role">Professor of Physics</div>
+          <p>Theoretical and computational soft matter and biophysics.</p>
+          <p>Email: rkapri@iisermohali.ac.in</p>
+          <a href="https://scholar.google.com/citations?hl=en&user=4l7HXd4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer"><img src="Images/gscholar.png" alt="" style="width:50px;height:auto;"></a>
+          <a href="https://web.iisermohali.ac.in/dept/physics/Rajeev_Kapri.html" target="_blank" rel="noreferrer"><img src="Images/iiserm_logo.png" alt="" style="width:50px;height:auto;"></a>
+        </div>
+      </div>
+
+    </div> <!-- End Faculty grid -->
+
+  </div> <!-- End container -->
+
+ <div class="container"> 
+ <div class="lab-grid">
+
+  <div class="lab-group">
+    <h3>AC Lab Members</h3>
+    <ul>
+      <li><strong>Dr. Chitrak Karan</strong> — Postdoctoral Fellow</li>
+      <li><strong>Sandip Roy</strong> — PhD Student</li>
+      <li><strong>Bal Krishan</strong> — PhD Student</li>
+      <li><strong>Subhashree Khuntia</strong> — PhD Student</li>
+      <li><strong>Sudeep Halder</strong> — PhD Student</li>
+      <li><strong>Love Grover</strong> — PhD Student</li>
+    </ul>
+  </div>
+
+  <div class="lab-group">
+    <h3>AKD Lab Members</h3>
+    <ul>
+      <li><strong>Dr. Dipak Patra</strong> — Postdoctoral Fellow</li>
+      <li><strong>Diganta Bhaskar</strong> — PhD Student</li>
+    </ul>
+  </div>
+
+  <div class="lab-group">
+    <h3>SR Lab Members</h3>
+    <ul>
+      <li><strong>Dr. Rajinder Kaur</strong> — Postdoctoral Fellow</li>
+      <li><strong>Pritam Saha</strong> — PhD Student</li>
+      <li><strong>Devansh Swadia</strong> — PhD Student</li>
+      <li><strong>Charu Taneja</strong> — PhD Student</li>
+      <li><strong>Sagar Santosh Gawande</strong> — PhD Student</li>
+      <li><strong>Dheeraj Paneru</strong> — PhD Student</li>
+    </ul>
+  </div>
+
+  <div class="lab-group">
+    <h3>RK Lab Members</h3>
+    <ul>
+      <li><strong>Dr. Gaurav Kumar</strong> — Postdoctoral Fellow</li>
+      <li><strong>John Doe</strong> — PhD Student</li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+
+  <!-- Back button -->
+  <div class="back">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>
